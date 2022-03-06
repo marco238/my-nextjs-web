@@ -31,20 +31,20 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div className="presentation-text">
+        <div className={styles.presentationText}>
           <p>I am,</p>
           <h1>{name}</h1>
-          <span className="description"> => {job}</span>
-          <div className="presentation-buttons">
-            <a id="hire-me" href={`mailto:${mail}?Subject=Quiero%20contar%20con%20tus%20servicios`}>
+          <span className={styles.description}> => {job}</span>
+          <div className={styles.presentationButtons}>
+            <a id={styles.hireMe} href={`mailto:${mail}?Subject=Quiero%20contar%20con%20tus%20servicios`}>
               HIRE ME
             </a>
-            <a id="download-resume" onClick={_downloadResume}>
+            <a onClick={_downloadResume}>
               <button>DOWNLOAD RESUME</button>
             </a>
           </div>
         </div>
-        <div className="feathers">
+        <div className={styles.feathers}>
           <img src={assetUrl} alt="Feather" />
           <img src={assetUrl} alt="Feather" />
           <img src={assetUrl} alt="Feather" />
